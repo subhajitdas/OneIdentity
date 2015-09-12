@@ -6,12 +6,15 @@ namespace OneIdentity.Domain.Entity
     {
         public Scope()
         {
-            Clients = new HashSet<Client>();
+            AllowedClients = new HashSet<Client>();
         }
+
         public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public string ApplicationId { get; set; }
 
-        public virtual ICollection<Client> Clients { get; set; }
+        public virtual Application Application { get; set; }
+        public virtual ICollection<Client> AllowedClients { get; set; }
     }
 }

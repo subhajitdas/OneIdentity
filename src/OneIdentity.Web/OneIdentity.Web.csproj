@@ -88,6 +88,24 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneIdentity.Data.Contracts\OneIdentity.Data.Contracts.csproj">
+      <Project>{c4406011-967d-4c14-9c68-ecc67afe30e7}</Project>
+      <Name>OneIdentity.Data.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneIdentity.Data\OneIdentity.Data.csproj">
+      <Project>{d4492d6f-a332-4738-baa4-339e51b06473}</Project>
+      <Name>OneIdentity.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneIdentity.Domain\OneIdentity.Domain.csproj">
+      <Project>{175f596f-3b8f-4382-9307-1080c9eebb15}</Project>
+      <Name>OneIdentity.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneIdentity.Security\OneIdentity.Security.csproj">
+      <Project>{e8bf57e6-17be-4415-9b79-09b323bfde13}</Project>
+      <Name>OneIdentity.Security</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

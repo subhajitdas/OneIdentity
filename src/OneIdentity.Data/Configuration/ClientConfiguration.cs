@@ -11,12 +11,13 @@ namespace OneIdentity.Data.Configuration
             this.Property(c => c.Id).IsUnicode(false).IsRequired().HasMaxLength(10);
             this.Property(c => c.Name).IsRequired().HasMaxLength(127);
             this.Property(c => c.Description).IsOptional().HasMaxLength(1023);
-            this.HasMany(c => c.AllowedScopes).WithMany(s => s.Clients).Map(m =>
-                {
-                    m.MapLeftKey("ClientId");
-                    m.MapRightKey("ScopeId");
-                    m.ToTable("ClientScopes");
-                });
+            this.Property(c => c.RedirectUri).IsRequired().HasMaxLength(2047);
+            this.HasMany(c => c.AllowedScopes).WithMany(s => s.AllowedClients).Map(m =>
+            {
+                m.MapLeftKey("ClientId");
+                m.MapRightKey("ScopeId");
+                m.ToTable("ClientScopes");
+            });
         }
     }
 }

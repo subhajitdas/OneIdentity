@@ -1,6 +1,7 @@
 ﻿using OneIdentity.Data.Configuration;
 using OneIdentity.Domain.Entity;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace OneIdentity.Data
 {
@@ -14,6 +15,8 @@ namespace OneIdentity.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+
             modelBuilder.Configurations.Add(new ApplicationConfiguration());
             modelBuilder.Configurations.Add(new ClientConfiguration());
             modelBuilder.Configurations.Add(new ScopeConfiguration());

@@ -12,6 +12,7 @@ namespace OneIdentity.Data.Configuration
             this.Property(a => a.Name).IsRequired().HasMaxLength(127);
             this.Property(a => a.Description).IsOptional().HasMaxLength(1023);
             this.HasMany(a => a.Clients).WithRequired(c => c.Application).HasForeignKey(c => c.ApplicationId);
+            this.HasMany(a => a.Scopes).WithRequired(s => s.Application).HasForeignKey(s => s.ApplicationId);
         }
     }
 }

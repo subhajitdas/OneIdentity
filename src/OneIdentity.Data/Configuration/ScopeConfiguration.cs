@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace OneIdentity.Data.Configuration
 {
-    public class ScopeConfiguration : EntityTypeConfiguration<Application>
+    public class ScopeConfiguration : EntityTypeConfiguration<Scope>
     {
         public ScopeConfiguration()
         {
