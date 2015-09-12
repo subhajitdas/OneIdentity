@@ -1,4 +1,4 @@
-﻿using OneIdentity.Domain.Entity.Enum;
+﻿using OneIdentity.Domain.Enum;
 using System.Collections.Generic;
 
 namespace OneIdentity.Domain.Entity

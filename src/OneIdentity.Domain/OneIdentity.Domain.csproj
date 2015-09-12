@@ -42,13 +42,11 @@
   <ItemGroup>
     <Compile Include="Entity\Application.cs" />
     <Compile Include="Entity\Client.cs" />
-    <Compile Include="Entity\Enum\OAuthFlow.cs" />
+    <Compile Include="Enum\OAuthFlow.cs" />
     <Compile Include="Entity\Scope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enum\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

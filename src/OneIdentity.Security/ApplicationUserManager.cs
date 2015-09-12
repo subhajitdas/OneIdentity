@@ -1,10 +1,5 @@
 ﻿using Microsoft.AspNet.Identity;
 using OneIdentity.Security.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OneIdentity.Security
 {

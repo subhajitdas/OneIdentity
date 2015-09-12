@@ -1,4 +1,4 @@
-﻿namespace OneIdentity.Domain.Entity.Enum
+﻿namespace OneIdentity.Domain.Enum
 {
     public enum OAuthFlow : byte
     {
