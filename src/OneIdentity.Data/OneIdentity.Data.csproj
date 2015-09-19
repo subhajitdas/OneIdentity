@@ -50,8 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\ApplicationConfiguration.cs" />
+    <Compile Include="Configuration\AuthorizedGrantConfiguration.cs" />
     <Compile Include="Configuration\ClientConfiguration.cs" />
+    <Compile Include="Configuration\HMACSignatureCredentialCofiguration.cs" />
+    <Compile Include="Configuration\RedirectUrlConfiguration.cs" />
     <Compile Include="Configuration\ScopeConfiguration.cs" />
+    <Compile Include="Configuration\SignatureCredentialConfiguration.cs" />
+    <Compile Include="Configuration\X509SignatureCredentialCofiguration.cs" />
     <Compile Include="Migrations\201509121643403_V1_0_0.cs" />
     <Compile Include="Migrations\201509121643403_V1_0_0.Designer.cs">
       <DependentUpon>201509121643403_V1_0_0.cs</DependentUpon>

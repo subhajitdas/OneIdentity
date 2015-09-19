@@ -41,7 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Application.cs" />
+    <Compile Include="Entity\AuthorizedGrant.cs" />
     <Compile Include="Entity\Client.cs" />
+    <Compile Include="Entity\HMACSignatureCredential.cs" />
+    <Compile Include="Entity\RedirectUrl.cs" />
+    <Compile Include="Entity\SignatureCredential.cs" />
+    <Compile Include="Entity\X509SignatureCredential.cs" />
+    <Compile Include="Enum\AuthorizedGrantType.cs" />
     <Compile Include="Enum\OAuthFlow.cs" />
     <Compile Include="Entity\Scope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

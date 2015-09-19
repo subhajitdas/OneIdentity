@@ -16,7 +16,9 @@ namespace OneIdentity.Domain.Entity
         public int TokenLifetime { get; set; }
         public bool AllowRefreshToken { get; set; }
         public bool IsActive { get; set; }
+        public int SignatureCredentialId { get; set; }
 
+        public virtual SignatureCredential SignatureCredential { get; set; }
         public virtual ICollection<Client> Clients { get; set; }
         public virtual ICollection<Scope> Scopes { get; set; }
     }
